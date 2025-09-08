@@ -15,14 +15,15 @@ int main(){
     for(int i =0;i<n;i++){
          cout << "\nEnter details of book " << i + 1 << ":\n";
         cout << "Enter the title name: ";
-        cin >> books[i].title;
+        getline(cin, books[i].title);
 
         cout << "Enter the author name: ";
-        cin >> books[i].author;
+        getline(cin, books[i].author);
 
         cout << "Enter the price name: ";
         cin >> books[i].price;
 
+        cin.ignore();
     }
 
     int cheapBook = 0;
