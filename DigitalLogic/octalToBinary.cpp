@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     long long octal;int remainder;
-    string binary = " ";
+    string binary = "";
 
     cout << "Enter the octal number: ";
     cin >> octal;
@@ -13,7 +13,7 @@ int main(){
         remainder = octal % 10;
         octal = octal / 10;
 
-        string temp = " ";
+        string temp = "";
         for (int i = 0; i < 3; i++){
             temp = char(remainder % 2 + '0') + temp;
             remainder = remainder / 2;
