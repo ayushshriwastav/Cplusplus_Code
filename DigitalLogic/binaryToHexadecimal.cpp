@@ -3,8 +3,9 @@
 using namespace std;
 
 int main(){
-    int binary, decimal = 0, base = 1, remainder;
-
+    int binary,  base = 1, remainder;
+    long long int decimal = 0;
+    
     cout << "Enter a binary number: ";
     cin >> binary;
 
