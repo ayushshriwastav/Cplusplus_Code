@@ -3,8 +3,9 @@
 using namespace std;
 
 int main(){
-    int octal, remainder, base = 1;
-    int decimal = 0;
+    long long octal; 
+    long long decimal = 0;
+    int remainder, base = 1;
 
     cout << "Enter the octal number: ";
     cin >> octal;
