@@ -24,4 +24,6 @@ int main(){
 
     cout << "Binary number is: " << binary << endl;
 
-}  
+    return 0;
+    
+}
