@@ -3,7 +3,8 @@
 using namespace std;
 
 int main(){
-    long long octal;int remainder;
+    long long octal;
+    int remainder;
     string binary = "";
 
     cout << "Enter the octal number: ";
