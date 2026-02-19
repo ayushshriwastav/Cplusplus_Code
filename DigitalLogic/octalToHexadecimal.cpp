@@ -20,7 +20,7 @@ int main(){
             remainder = remainder / 2;                            // remove the last binary digit until the octal digit is converted to binary 
         }
 
-        binary = temp + binary;                                   // concatenate the 3 bits binary of the current octal digit to the left of the existing binary string 
+        binary = temp + binary;                                   // concatenate the 3 bits binary of the current octal digit to the left of the existing binary string
     }                                                            // convert first octal to binary 
 
     cout << "binary number is: " << binary << endl;
@@ -46,5 +46,6 @@ int main(){
     }
     
     cout << "Hexadecimal number is: " << hexadecimal << endl;
+    return 0; 
 
 }  
