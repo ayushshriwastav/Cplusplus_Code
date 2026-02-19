@@ -11,16 +11,16 @@ int main(){
     cin >> octal;
 
    while (octal > 0){
-        remainder = octal % 10;
-        octal = octal / 10;
+        remainder = octal % 10;                                  // get the last octal digit 
+        octal = octal / 10;                                      // remove the last octal digit 
 
         string temp = "";
-        for (int i = 0; i < 3; i++){
-            temp = char(remainder % 2 + '0') + temp;
-            remainder = remainder / 2;
+        for (int i = 0; i < 3; i++){                             // convert each octal digit to 3 bits binary
+            temp = char(remainder % 2 + '0') + temp;              // convert int 0 or 1 to char '0' or '1' and build the binary string in reverse order 
+            remainder = remainder / 2;                            // remove the last binary digit until the octal digit is converted to binary 
         }
 
-        binary = temp + binary;
+        binary = temp + binary;                                   // concatenate the 3 bits binary of the current octal digit to the left of the existing binary string 
     }                                                            // convert first octal to binary 
 
     cout << "binary number is: " << binary << endl;
