@@ -19,4 +19,6 @@ int main(){
 
     cout << "decimal number is: " << decimal << endl;
 
+    return 0;
+
 }  
