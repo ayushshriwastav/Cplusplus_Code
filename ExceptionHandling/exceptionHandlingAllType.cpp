@@ -49,10 +49,8 @@ int main()
         catch (int x)
         {
             cout << "Inner Catch : Negative Number = "
-                 << x << endl;
-
-            // Rethrow exception
-            throw;
+                 << x << endl; 
+            throw;             // Rethrow exception
         }
     }
 
